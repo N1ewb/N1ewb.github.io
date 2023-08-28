@@ -1,0 +1,1056 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 991px) {}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans Hebrew Condensed";
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wrap {
+  width: device-width;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header {
+  position: fixed;
+  padding: 10px 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: black;
+  z-index: 10000;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 90px;
+  width: 90px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.assurance {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: "Oswald";
+  transition: ease-in-out;
+}
+
+.assurance:hover {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: "Oswald";
+  transition: 700ms;
+}
+
+.dropdown {
+  font-family: "Oswald";
+  font-size: 28px;
+  color: white;
+  margin-right: 20px;
+}
+
+.dropdown:hover {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  transition: 1s;
+}
+
+/* body */
+.section-header {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+
+.content-menu-header {
+  height: 120px;
+  width: 500px;
+  background-color: #F4F4F4;
+  border-bottom: 1px solid black;
+  margin-top: 165px;
+
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  font-family: 'Oswald';
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-body-wrapper {
+  width: 980px;
+
+}
+
+.section-body {
+  background-color: white;
+  height: 420px;
+  width: 500px;
+
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+}
+
+.section-links ul {
+  list-style-type: none;
+}
+
+.section-ul-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-ul-links li {
+  margin-top: 15px;
+  align-items: center;
+}
+
+.section-ul-links li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Oswald';
+  font-size: 13px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.section-ul-links li a img {
+  height: 50px;
+  width: 50px;
+}
+
+.section-ul-links li a p {
+  margin-top: 5px;
+}
+
+.section-ul-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.section-ul-links a {
+  text-decoration: none;
+  position: relative;
+  color: #333;
+}
+
+.section-ul-links a::before {
+  content: '';
+  position: absolute;
+  top: 102px;
+  left: 4;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.section-ul-links a:hover::before,
+.section-ul-links a.active::before {
+  width: 60px;
+}
+
+.tab-content {
+  color: black;
+}
+
+.tab-pane {
+  padding: 50px 10px 20px 40px;
+}
+
+.tab-pane h1 {
+  font-family: 'Oswald';
+}
+
+.tab-pane p {
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 14px;
+  margin: 50px 0px;
+}
+
+.tab-pane a {
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 250px;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 28px;
+  font-family: 'Oswald';
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.section-one {
+  width: device-width;
+}
+
+/* Section Two */
+.section-two {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.two-header {
+  padding: 100px 60px 90px 250px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.two-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.spaceExpress-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  font-family: 'Oswald';
+  color: white;
+}
+
+.spaceExpress-logo p {
+  font-family: 'Lilita One';
+
+}
+
+.logo-black {
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.statement p {
+  color: white;
+  font-size: 30px;
+  font-family: 'Oswald';
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+/* section three */
+.section-three {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.three-header {
+
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.title-safety {
+  margin-top: 25px;
+  padding: 40px 0px;
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  direction: column;
+  justify-content: center;
+}
+
+.title-safety-wrapper {
+  width: 980px;
+}
+
+.three-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.three-first-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.title-safety h1 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.safety-assurance {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  width: 400px;
+  height: 400px;
+}
+
+.safety-assurance img {
+  width: 400px;
+  height: 400px;
+}
+
+.safety-assurance h3 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.safety-assurance p {
+  color: black;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 14px;
+}
+
+.safety-assurance a {
+  color: black;
+  font-size: 14px;
+  text-underline-offset: 8px;
+}
+
+.spaceport {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  width: 400px;
+  height: 400px;
+}
+
+.spaceport img {
+  width: 430px;
+  height: 430px;
+}
+
+.spaceport h3 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.spaceport p {
+  color: black;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 14px;
+}
+
+.spaceport a {
+  color: black;
+  font-size: 14px;
+  text-underline-offset: 8px;
+  margin-top: 20px;
+}
+
+.awc {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+
+  margin-top: 150px;
+
+  width: 980px;
+}
+
+.about-us {
+  width: 300px;
+}
+
+.whats-new {
+  width: 300px;
+}
+
+.contact-us {
+  width: 300px;
+}
+
+.awc h3 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.awc p {
+  color: black;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 14px;
+}
+
+.awc a {
+  color: black;
+  font-size: 14px;
+  text-underline-offset: 8px;
+}
+
+/* Section Four */
+.header-four {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-planets-wrapper {
+  width: 980px;
+
+}
+
+.title-planets {
+  margin-top: 25px;
+  padding: 40px 0px;
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.title-planets h1 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.planets-list {
+  padding: 20px;
+  margin: 60px 160px;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+}
+
+.planets-list {
+  width: 980px;
+
+}
+
+.planets-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.planets-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.planets-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.planets-container {
+  margin: 0 auto;
+  display: flex;
+  direction: row;
+  border-radius: 10px;
+  height: 370px;
+  max-height: 370px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.planets-list img {
+  width: 410px;
+  height: 270px;
+}
+
+.planets-list img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.planets-list a {
+  color: black;
+  font-size: 36px;
+  text-underline-offset: 8px;
+  font-family: 'Oswald';
+  text-align: center;
+}
+
+.recommendations-title h3 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.recommendations-title p {
+  color: black;
+  font-family: "Open Sans Hebrew Condensed";
+  font-size: 14px;
+  margin: 30px 0px;
+}
+
+.recommendations {
+  margin: 50px 160px 0px 180px;
+}
+
+.recommended {
+  width: 980px;
+}
+
+.recommended img {
+  height: 180px;
+  width: 270px;
+}
+
+.recommended h3 {
+  color: white;
+  font-family: 'Oswald';
+}
+
+.recommended p {
+  font-size: 14px;
+  color: white;
+  width: 640px;
+  font-family: "Open Sans Hebrew Condensed";
+}
+
+.recommended a {
+  font-size: 14px;
+  color: white;
+  text-underline-offset: 8px;
+  font-family: "Open Sans Hebrew Condensed";
+
+}
+
+.teyvat {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+  text-wrap: wrap;
+}
+
+.celesterra {
+  background-color: #232323;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+  text-wrap: wrap;
+}
+
+.astralis {
+  background-color: #111111;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+  text-wrap: wrap;
+}
+
+.description {
+  margin-left: 40px;
+}
+
+/* Section Five */
+
+.header-five {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-ships {
+  margin-top: 25px;
+  padding: 40px 0px;
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-five-wrapper {
+  width: 980px;
+}
+
+.title-ships h1 {
+  color: black;
+  font-family: 'Oswald';
+}
+
+.ships-list {
+  padding: 20px;
+  margin: 60px 160px;
+  background-color: #F4F4F4;
+}
+
+.ships-container {
+  width: 950px;
+  margin: 0px;
+}
+
+.ships-ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ships-ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.ships-ul::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ships-ul {
+  margin: 0 auto;
+  display: flex;
+  direction: row;
+  border-radius: 10px;
+  height: 370px;
+  max-height: 370px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.ships-list ul {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.ships-list img {
+  width: 410px;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.ships-list img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.ships-list a {
+  color: black;
+  font-size: 36px;
+  text-underline-offset: 8px;
+  font-family: 'Oswald';
+  text-align: center;
+}
+
+.our-ships {
+  width: 980px;
+}
+
+.our-ships-title {
+  margin: 50px 160px 0px 180px;
+}
+
+.our-ships img {
+  height: 180px;
+  width: 270px;
+}
+
+.our-ships h3 {
+  color: white;
+  font-family: 'Oswald';
+}
+
+.our-ships p {
+  font-size: 14px;
+  color: white;
+  width: 640px;
+  font-family: "Open Sans Hebrew Condensed";
+}
+
+.our-ships a {
+  font-size: 14px;
+  color: white;
+  text-underline-offset: 8px;
+  font-family: "Open Sans Hebrew Condensed";
+}
+
+.our-ships {
+  margin: 50px 160px 0px 180px;
+}
+
+.The-Astral-Express {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.herta {
+  background-color: #111111;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.stellaris {
+  background-color: #232323;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.nova-seeker {
+  background-color: #111111;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.celestial {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.ships-description {
+  margin-left: 40px;
+}
+
+/* Section Six*/
+.header-six {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.six-container {
+  width: 100%;
+}
+
+.six-title-wrapper {
+  margin-top: 25px;
+  padding: 40px 0px;
+  background-color: #F4F4F4;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.six-title {
+  width: 980px;
+}
+
+.six-title h1 {
+
+  color: black;
+  font-family: 'Oswald';
+}
+
+.six-content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.six-content {
+  background-color: #F4F4F4;
+  font-size: 14px;
+  color: white;
+  font-family: "Open Sans Hebrew Condensed";
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.six-content h3 {
+  color: black;
+  font-family: 'Oswald';
+  width: 400px;
+}
+
+.six-content p {
+  font-size: 14px;
+  color: black;
+  font-family: "Open Sans Hebrew Condensed";
+  width: 480px;
+  margin-top: 30px;
+}
+
+.six-content img {
+  width: 410px;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.six-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px 0px 50px;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  padding: 30px 60px 10px 0px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.footer-wrapper {
+  width: 980px;
+}
+
+.first-row-wrap {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+
+.footer-container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.spaceExpress-footer-logo {
+  width: 400px;
+}
+
+.footer-logo-black {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-logo-black img {
+  height: 70px;
+  width: 70px;
+}
+
+.footer-logo-black h3 {
+  font-family: 'Oswald';
+  font-size: 23px;
+}
+
+.spaceExpress-footer-logo p {
+  font-family: 'Lilita One';
+}
+
+.footer-links {
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Oswald';
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+
+  color: white;
+  font-family: 'Oswald';
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+
+}
+
+.first-row-links {
+  width: 50px;
+  display: flex;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-medyas {
+  width: 400px;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.social-medyas a img {
+  height: 20px;
+  width: 20px;
+  margin: 0px 15px 0px 15px;
+}
+
+.social-medyas a img:hover {
+  height: 25px;
+  width: 25px;
+  margin: -2px 13px -2px 12px;
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Open Sans Hebrew Condensed";
+}
+
+/* animations */
+@keyframes slide {
+
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 50ms all ease;
+  }
+
+  50% {
+    transform: translateY(75px);
+    opacity: 0;
+    transition: 50ms all ease;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 500s all ease;
+  }
+}
+
+@media {
+  section {
+    animation: slide 2s ease-in-out forwards;
+  }
+
+  .first-transition-wrapper {
+    animation: slide 2s ease-in-out forwards;
+    animation-delay: 500ms;
+  }
+}
+
+.transition-wrapper.active {
+  animation: slide 2s ease-in-out forwards;
+}
